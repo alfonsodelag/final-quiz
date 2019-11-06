@@ -1,10 +1,9 @@
-header, main, footer table {
+header, main, footer, table {
     text-align: center;
-    margin: 
 }
 
 
-h1, h2, input, button {
+h1, h2, button {
     margin: 100px;
 }
 
