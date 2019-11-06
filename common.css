@@ -1,3 +1,13 @@
-header, main, footer {
+header, main, footer table {
     text-align: center;
+    margin: 
+}
+
+
+h1, h2, input, button {
+    margin: 100px;
+}
+
+.ranking-box {
+    margin: 0 auto;
 }
