@@ -2,13 +2,7 @@
             <div>
                 <h3>Choose the Right Answers</h3>
                 <span>Question 1 of 7</span>
-                <p>What does HTML stand for?</p>
-                <div>
-                    <input type="radio" name="question 1">HyperText Markup Language</input><br>
-                    <input type="radio" name="question 1" value="HyperTransfer Markup Language">HyperTransfer Markup Language</input><br>
-                    <input type="radio" name="question 1" value="HyperText Protocol Language">HyperText Protocol Language</input><br>
-                    <input type="radio" name="question 1" value="HyperLink Markup Language">HyperText Markup Language</input><br>
-                </div>
+               
                 <h3>Choose the Right Answers</h3>
                 <span>Question 2 of 7</span>
                 <p>Who is making the Web Standards</p>
