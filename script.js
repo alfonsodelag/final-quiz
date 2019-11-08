@@ -1,3 +1,5 @@
+
+//Meter bar animation 
 var meterHTML = document.getElementById("meterHTML");
 var max = parseInt(meterHTML.getAttribute("max"));
 var value = parseInt(meterHTML.getAttribute("value"));
@@ -10,7 +12,11 @@ next.onclick = function(){
     } 
 }
 
-var 
+window.Jsondata
+
+
+
+
 
 
 
