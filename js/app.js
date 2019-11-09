@@ -14,85 +14,85 @@
         ]
     },
     {
-        title : "Who created html?",
+        title : "What tag do you use to create a numbered list?",
         type : "radio",
         option : 
         [
                 { 
-                    "choice1" : "The html association",
-                    "choice2" : "the FBI",
-                    "choice3" : "The soviets",
-                    "choice4" : "Humans"
+                    "choice1" : "ul",
+                    "choice2" : "ol",
+                    "choice3" : "list",
+                    "choice4" : "numbered list"
                 },
 
         ]
     },
     {
-        title : "Which of these are tags of Html?",
+        title : "Which of these is a real tag of Html?",
         type : "radio",
         option : 
         [
                 { 
-                    "choice1" : "option A",
-                    "choice2" : "option B",
-                    "choice3" : "option C",
-                    "choice4" : "option D"
+                    "choice1" : "b",
+                    "choice2" : "create",
+                    "choice3" : "simplify",
+                    "choice4" : "section"
                 },
 
         ]
     },
     {
-        title : "How do you make a numbered list in html?",
+        title : "Which tag defines the title of a document?",
         type : "radio",
         option : 
         [
                 { 
-                    "choice1" : "option A",
-                    "choice2" : "option B",
-                    "choice3" : "option C",
-                    "choice4" : "option D"
+                    "choice1" : "head",
+                    "choice2" : "meta",
+                    "choice3" : "h1",
+                    "choice4" : "title"
                 },
 
         ]
     },
     {
-        title : "What does html stand for?",
+        title : "What tag do you use to create a bulleted list in Html??",
         type : "radio",
         option : 
         [
                 { 
-                    "choice1" : "option A",
-                    "choice2" : "option B",
-                    "choice3" : "option C",
-                    "choice4" : "option D"
+                    "choice1" : "ol",
+                    "choice2" : "ul",
+                    "choice3" : "bullet",
+                    "choice4" : "list"
                 },
 
         ]
     },
     {
-        title : "What does html stand for?",
+        title : "What is the correct html tag for inserting a line break",
         type : "radio",
         option : 
         [
                 { 
-                    "choice1" : "option A",
-                    "choice2" : "option B",
-                    "choice3" : "option C",
-                    "choice4" : "option D"
+                    "choice1" : "br",
+                    "choice2" : "rr",
+                    "choice3" : "lb",
+                    "choice4" : "break"
                 },
 
         ]
     },
     {
-        title : "What does html stand for?",
+        title : "What is the correct tag to insert an image?",
         type : "radio",
         option : 
         [
                 { 
-                    "choice1" : "option A",
-                    "choice2" : "option B",
-                    "choice3" : "option C",
-                    "choice4" : "option D"
+                    "choice1" : "img",
+                    "choice2" : "image",
+                    "choice3" : "insert",
+                    "choice4" : "paint"
                 },
 
         ]
