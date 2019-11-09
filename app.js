@@ -122,4 +122,18 @@ nextButton.onclick = function(){
 
 
 
+function saveName(){
+    let username = document.getElementById("username").value;
+    localStorage.setItem("username", username);
+}
+
+
+function showName(){
+    document.getElementById("userNameGeneral").innerHTML = localStorage.getItem("username");
+}
+
+
+    
+
+
 
