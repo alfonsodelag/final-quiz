@@ -120,6 +120,17 @@ nextButton.onclick = function(){
     mostrar(i);
 }
 
+var meterHTML = document.getElementById("meterHTML");
+var max = parseInt(meterHTML.getAttribute("max"));
+var value = parseInt(meterHTML.getAttribute("value"));
+var next = document.getElementById("next-button");
+next.onclick = function(){
+    if ((value<max)) {
+        value += 10;
+        document.getElementById("meterHTML").value = value;
+        console.log(value);
+    } 
+}
 
 
 function saveName(){
