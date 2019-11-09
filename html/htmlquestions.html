@@ -10,17 +10,26 @@
     <title>Quiz</title>
 </head>
 <body>
-    <div>
-        <div>
-        <label for="">html</label>
-        <meter value="2" min="0" max="10"></meter>
-        <label for="">css</label>
-        <meter value="2" min="0" max="10"></meter>
-        <label for="javascript">javascript</label>
-        <meter value="2" min="0" max="10"></meter>
-        </div>
-    </div>
-
+    <header>
+        <h1>HTML Questions</h1>
+        <form name="formulario" class="container">
+            <label>HTML</label>
+            <!-- Medidor -->
+            <meter name="meterHTML" id="meterHTML" min="0" max="100"
+                    low="25" high="75"
+                    optimum="100" value="0"> </meter>
+            <label>CSS</label>
+            <!-- Medidor -->
+            <meter min="0" max="100"
+                    low="25" high="75"
+                    optimum="100" value="0"></meter>
+            <label>JS</label>
+            <!-- Medidor -->
+            <meter min="0" max="100"
+                    low="25" high="75"
+                    optimum="100" value="0"> </meter>
+        </form>
+    </header>
 
     <div class="panel">
         <div id="question">
@@ -30,7 +39,7 @@
         <div> <input type="radio" name="options"><span id="choice3"></span></div>
         <div> <input type="radio" name="options"><span id="choice4"></span></div>
         <div>
-        <button id="nextButton">Next</button>
+        <button id="nextButton" onclick="checkAnswer()">Next</button>
         </div>
     </div>
 
@@ -44,6 +53,5 @@
                
 <script src="../js/app.js"></script>
 <script src="../js/localstorage1.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

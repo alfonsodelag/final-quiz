@@ -120,22 +120,34 @@ nextButton.onclick = function(){
     mostrar(i);
 }
 
-var meterHTML = document.getElementById("meterHTML");
-var max = parseInt(meterHTML.getAttribute("max"));
-var value = parseInt(meterHTML.getAttribute("value"));
-var next = document.getElementById("next-button");
-next.onclick = function(){
-    if ((value<max)) {
-        value += 10;
-        document.getElementById("meterHTML").value = value;
-        console.log(value);
-    } 
-}
+// var meterHTML = document.getElementById("meterHTML");
+// var max = parseInt(meterHTML.getAttribute("max"));
+// var value = parseInt(meterHTML.getAttribute("value"));
+// var next = document.getElementById("nextButton");
+// next.onclick = function(){
+//     if ((value<max)) {
+//         value += 10;
+//         document.getElementById("meterHTML").value = value;
+//         console.log(value);
+//     } 
+// }
+
+
+// function checked(){
+//     for (let index = 0; index < arrayInput.length; index++) {
+//         if (arrayInput[index].checked == true){
+//             console.log(arrayInput[index].value);
+//         }
+//     }
+// }
+
+// checked();
 
 
 function saveName(){
     let username = document.getElementById("username").value;
     localStorage.setItem("username", username);
+    // let rightanswer = document.getElementById("choice1")
 }
 
 
@@ -143,8 +155,10 @@ function showName(){
     document.getElementById("userNameGeneral").innerHTML = localStorage.getItem("username");
 }
 
+function checkAnswer(){
+    // let rightanswer = document.getElementById("choice1");
+}
 
-    
 
 
 
