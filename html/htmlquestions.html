@@ -16,17 +16,17 @@
             <label>HTML</label>
             <!-- Medidor -->
             <meter name="meterHTML" id="meterHTML" min="0" max="100"
-                    low="25" high="75"
+                    low="0" high="0"
                     optimum="100" value="0"> </meter>
             <label>CSS</label>
             <!-- Medidor -->
             <meter min="0" max="100"
-                    low="25" high="75"
+                    low="0" high="0"
                     optimum="100" value="0"></meter>
             <label>JS</label>
             <!-- Medidor -->
             <meter min="0" max="100"
-                    low="25" high="75"
+                    low="0" high="0"
                     optimum="100" value="0"> </meter>
         </form>
     </header>
@@ -34,12 +34,12 @@
     <div class="panel">
         <div id="question">
         </div>
-        <div> <input type="radio" name="options"><span id="choice1"></span></div>
-        <div> <input type="radio" name="options"><span id="choice2"></span></div>
-        <div> <input type="radio" name="options"><span id="choice3"></span></div>
-        <div> <input type="radio" name="options"><span id="choice4"></span></div>
+        <div><input type="radio" id="1" class="a" value="1" name="options"><label class="label" for="1" id="choice1"></label></div> 
+        <div><input type="radio" id="2" class="a" value="0" name="options"><label class="label" for="2" id="choice2"></label></div> 
+        <div><input type="radio" id="3" class="a" value="0" name="options"><label class="label" for="3" id="choice3"></label></div> 
+        <div><input type="radio" id="4" class="a" value="0" name="options"><label class="label" for="4" id="choice4"></label></div> 
         <div>
-        <button id="nextButton" onclick="checkAnswer()">Next</button>
+        <button id="nextButton">Next</button>
         </div>
     </div>
 
@@ -52,6 +52,5 @@
     </footer>
                
 <script src="../js/app.js"></script>
-<script src="../js/localstorage1.js"></script>
 </body>
 </html>
