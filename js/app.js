@@ -111,7 +111,10 @@ document.getElementById("choice2").innerHTML = questions[i].option[0].choice2;
 document.getElementById("choice3").innerHTML = questions[i].option[0].choice3;
 document.getElementById("choice4").innerHTML = questions[i].option[0].choice4;
 
-
+// document.getElementById("0").value = questions[i].option[0].choice1;
+// document.getElementById("1").value = questions[i].option[0].choice2;
+// document.getElementById("2").value = questions[i].option[0].choice3;
+// document.getElementById("3").value = questions[i].option[0].choice4;
 if(window.location.pathname == "/C:/Users/alfon/Desktop/final-quiz/final-quiz/html/htmlquestions.html") {
     switch(i) {
         case 6:
@@ -188,16 +191,17 @@ var value = parseInt(meterHTML.getAttribute("value"));
 }
 
 
-
-function checked(){
-    let inputsArray = document.querySelectorAll(".a")
-    for (let index = 0; index < 4; index++) {
-        if (inputsArray[index].checked == true){
-            console.log(inputsArray[index].checked.value);
+for (let index = 0; index < 4; index++) {
+    document.getElementById("index").onclick
+    function checked(){
+        let inputsArray = document.querySelectorAll(".a")
+        for (let index = 0; index < 4; index++) {
+            if (inputsArray[index].checked == true){
+                console.log(inputsArray[index].value);
+            }
         }
     }
 }
-
 
 
 
@@ -211,4 +215,6 @@ function saveName(){
 function showName(){
     document.getElementById("userNameGeneral").innerHTML = localStorage.getItem("username");
 }
+
+
 
