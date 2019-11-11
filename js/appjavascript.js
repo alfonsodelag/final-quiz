@@ -1,4 +1,4 @@
-    let questions = [
+let questions = [
     {
         title : "What does html stand for?",
         type : "radio",
@@ -23,7 +23,7 @@
                     "choice2" : "ol",
                     "choice3" : "list",
                     "choice4" : "numbered list",
-                    "answer" : "ul"  
+                    "answer" : "ol"  
                 },
 
         ]
@@ -132,48 +132,30 @@ document.getElementById("choice2").innerHTML = questions[i].option[0].choice2;
 document.getElementById("choice3").innerHTML = questions[i].option[0].choice3;
 document.getElementById("choice4").innerHTML = questions[i].option[0].choice4;
 
-let puntos = 0;
+
+
+document.getElementById("choice1").checked = false; 
+document.getElementById("choice2").checked = false; 
+document.getElementById("choice3").checked = false; 
+document.getElementById("choice4").checked = false; 
 
 document.getElementById("0").value = questions[i].option[0].choice1;
 document.getElementById("1").value = questions[i].option[0].choice2;
 document.getElementById("2").value = questions[i].option[0].choice3;
 document.getElementById("3").value = questions[i].option[0].choice4;
-if(window.location.pathname == "/C:/Users/alfon/Desktop/final-quiz/final-quiz/html/htmlquestions.html") {
-    for (let index = 0; index < 4; index++) { //El for te va a decir las posiciones de las posibles respuestas
-    document.getElementById(index).onclick = function (){ //a cada respuesta se le coloca un evento onclick
-        let inputsArray = document.querySelectorAll(".a")  //se obtienen los inputs que contienen los radio de las respuestas
-            if (inputsArray[index].value == questions[i].option[0].answer ){ //esto es una comparacion del que se selecciono con la respuesta
-                console.log(inputsArray[index].value);
-                puntos++; //si coincide lo que el usuario presiono se va a incrementar sus puntos.
-            }
-        
-    }
-    
-}
-console.log(puntos);
 
+if(window.location.pathname == "/C:/Users/alfon/Desktop/final-quiz/final-quiz/html/javascriptquestions.html") {
     switch(i) {
-        case 6:
-            // if (localStorage.getItem("puntuacion")) {  //El if se ejecuta si existe "Puntuacion" en el localStorage
-            // let localStorageScore = [localStorage.getItem("puntuacion")] //Esta variable crea un array de las puntuaciones dentro del local storage
-            let puntuacion = {       //esto es el objeto "puntuacion" que creas para meterlo dentro del local storage
-                name : localStorage.getItem("username"), //lo que contiene el objeto puntuacion es el nombre del usuario...
-                score : puntos //...y una variable que representa puntuaciones
-            }
-            // localStorageScore.push(puntuacion);  //aqui se guarda las puntuaciones contenidas en el localStorage de los usuarios
-            localStorage.setItem("puntuacion", JSON.stringify(puntuacion));  //Despues de añadir otros usuarios que ha completado el quizz, se añade su puntuacion al LocalStorage
-            
-        // }
-        window.location.href="./cssquestions.html"
+        case 5:
+        window.location.href="./ranking.html"
         break;
         default:
           // Well 
     }
+    console.log(mostrar);  
 }
 
-    
 }
-
 mostrar(i);
 
 // function checkAnswer(){
@@ -213,7 +195,18 @@ var value = parseInt(meterHTML.getAttribute("value"));
     }
 }
 
-// var puntos;
+
+for (let index = 0; index < 4; index++) {
+    document.getElementById(index).onclick = function (){
+        let inputsArray = document.querySelectorAll(".a")
+            if (inputsArray[index].value == questions[index].option[0].answer ){
+                console.log(inputsArray[index].value);
+            }
+        
+    }
+    
+}
+
 
 
 function saveName(){

@@ -1,9 +1,13 @@
 * {
     border: 1px solid black;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
 }
 
 header, main, footer, table {
     text-align: center;
+    align-content: center;
 }
 
 
@@ -56,3 +60,6 @@ h1, h2, button, footer {
     cursor: pointer;
   }
 
+#table {
+  text-align: center;
+}
